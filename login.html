@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bejelentkezés</title>
+<link rel="stylesheet" href="loginhtml.css">
+<link rel="icon" type="image/png" href="kepek/logo.png">
+</head>
+<body>
+<div class="log-container">
+    <div id="loginbox" class="reg-log-box">  
+    <h2>Bejelentkezés</h2>
+    <form id="loginForm" class="log-form">
+        <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email">E-mail cím</label>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="password" required>
+            <label for="password">Jelszó</label>
+        </div>
+
+        <div class="forgot-container">
+            <button type="button" id="forgotBtn" class="forgot-password">Elfelejtett jelszó?</button>
+        </div>
+
+        <button type="submit" class="loginbutton">Bejelentkezés</button>
+    </form>
+
+    <div class="register-option">
+         <p>Még nincs fiókod? <a href="#" id="showRegister">Regisztráció</a></p>
+   </div>
+    </div>
+ <div id="registerbox" class="reg-log-box" style="display:none;">
+        <h2>Regisztráció</h2>
+        <form id="registerForm" class="log-form">
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label for="username">Felhasználónév</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="regEmail" required>
+                <label for="regEmail">E-mail cím</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="regPassword" required>
+                <label for="regPassword">Jelszó</label>
+            </div>
+
+            <button type="submit" class="loginbutton">Regisztráció</button>
+        </form>
+
+        <p>Van már fiókod? <a href="#" id="showLogin">Bejelentkezés</a></p>
+    </div>
+
+
+</div>
+<script src="loginform.js"></script>
+</body>
+</html>
